@@ -10,4 +10,5 @@ PICKS = {
     "story_anastasiia": ("anastasiia", ["ArmandoAscorvePhoto-10.jpg", "ArmandoAscorvePhoto-5.jpg"]),
     "story_photographer": ("nadine_foto", ["ArmandoAscorvePhoto-15.jpg", "ArmandoAscorvePhoto-18.jpg"]),
     "story_kitchen": ("workshop", ["ArmandoAscorvePhoto-9.jpg", "ArmandoAscorvePhoto-6.jpg"]),
+    "anastasiia_bridge": ("inbox", ["anastasiia_bridge.jpg"]),
 }

@@ -26,3 +26,8 @@ CAPTIONS["photographer_hero"] = {
     "caption": "Turn the camera around sometimes.\n\nMost of what makes a photo editorial isn't the camera — it's where you put the light and what you ask the person in front of it to do. Here's one from a gym session that proves it works anywhere.",
     "tags": "#editorialphotography #fitnessphotography #photographylighting #photographytips #portraitphotography",
 }
+
+CAPTIONS["anastasiia_bridge"] = {
+    "caption": "Low angle, low light, one girder overhead for a ceiling.\n\nSometimes the location is the lighting plan \u2014 this one just needed someone willing to shoot from the ground.\n\n@vanastasiia_",
+    "tags": "#editorialphotography #fashioneditorial #streetstyle #torontophotographer #editorial",
+}

@@ -10,6 +10,7 @@ SOURCES = {
     "nadine": Path("/Volumes/LaCie/Nadine/edited"),
     "nadine_foto": Path("/Volumes/LaCie/Nadine/FOTO/edited"),
     "nadine_studio": Path("/Volumes/LaCie/Nadine/studio/Selected"),
+    "inbox": Path(__file__).resolve().parent / "inbox",
 }
 EXTS = {".jpg", ".jpeg", ".tif", ".tiff", ".png"}
 

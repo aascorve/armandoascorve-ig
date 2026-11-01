@@ -5,6 +5,7 @@ WEEK1 = [
     {"date": "2026-11-04", "time": "19:00", "type": "image",     "key": "photographer_hero",    "approved": False, "posted": False},
     {"date": "2026-11-06", "time": "19:00", "type": "reel",      "key": "r05_editorial",     "approved": False, "posted": False},
     {"date": "2026-11-07", "time": "19:00", "type": "image",     "key": "kitchen_hero",      "approved": False, "posted": False},
+    {"date": "2026-11-08", "time": "19:00", "type": "image",     "key": "anastasiia_bridge", "approved": False, "posted": False},
 ]
 STORIES = [
     {"date": "2026-11-02", "time": "12:30", "key": "story_anastasiia", "idx": 0, "approved": False, "posted": False},
