@@ -1,14 +1,15 @@
 {
   "account": "17841440975668115",
-  "note": "Nov 2026 Week 1. Nothing posts automatically until each entry's approved=true AND the one-time posting switch is turned on by Armando in chat.",
+  "note": "Nov 2026 Week 1. All entries approved by Armando on Nov 1. r09_photographer posted manually (off-slot, by explicit request). Remaining entries post only via publish.py, gated on approved + time slot + POSTING_ON.",
   "feed": [
     {
       "date": "2026-11-02",
       "time": "19:00",
       "type": "reel",
       "key": "r09_photographer",
-      "approved": false,
-      "posted": false,
+      "approved": true,
+      "posted": true,
+      "media_id": "17948129712356998",
       "caption": "Stop taking pictures. Start directing them.\n\nThat's the first thing I tell every photographer at The Editorial Eye Workshop \u2014 and it's the one shift that changes everything about how your images read.\n\nWhat's the one habit that's held your photography back? Tell me below.",
       "tags": "#editorialphotography #photographyworkshop #photographytips #behindthescenes #photographereducation #theeditorialeye"
     },
@@ -17,7 +18,7 @@
       "time": "19:00",
       "type": "carousel",
       "key": "anastasiia_carousel",
-      "approved": false,
+      "approved": true,
       "posted": false,
       "caption": "Gothic stone, grey tailoring, one golden-hour window. Swipe through an editorial built around a single location and a lot of patience.\n\n@vanastasiia_",
       "tags": "#editorialphotography #fashioneditorial #torontophotographer #streetstyle #editorial"
@@ -27,7 +28,7 @@
       "time": "19:00",
       "type": "image",
       "key": "photographer_hero",
-      "approved": false,
+      "approved": true,
       "posted": false,
       "caption": "Turn the camera around sometimes.\n\nMost of what makes a photo editorial isn't the camera \u2014 it's where you put the light and what you ask the person in front of it to do. Here's one from a gym session that proves it works anywhere.",
       "tags": "#editorialphotography #fitnessphotography #photographylighting #photographytips #portraitphotography"
@@ -37,7 +38,7 @@
       "time": "19:00",
       "type": "reel",
       "key": "r05_editorial",
-      "approved": false,
+      "approved": true,
       "posted": false,
       "caption": "This is how a look goes from the rack to the frame \u2014 in real time, no cuts.\n\nStyling is half the editorial. Get this part wrong and the best light in the world won't save the shot.\n\nSave this for your next shoot.",
       "tags": "#fashioneditorial #stylingtips #editorialphotography #bts #photographytips #fashionphotography"
@@ -47,7 +48,7 @@
       "time": "19:00",
       "type": "image",
       "key": "kitchen_hero",
-      "approved": false,
+      "approved": true,
       "posted": false,
       "caption": "Two looks, one kitchen, zero boring corners.\n\nSpaces built to be photographed read completely differently once you light them like a set.",
       "tags": "#interiorphotography #editorialphotography #fashionphotography #kitchendesign #behindthescenes"
@@ -57,7 +58,7 @@
       "time": "19:00",
       "type": "image",
       "key": "anastasiia_bridge",
-      "approved": false,
+      "approved": true,
       "posted": false,
       "caption": "Low angle, low light, one girder overhead for a ceiling.\n\nSometimes the location is the lighting plan \u2014 this one just needed someone willing to shoot from the ground.\n\n@vanastasiia_",
       "tags": "#editorialphotography #fashioneditorial #streetstyle #torontophotographer #editorial"
@@ -69,7 +70,7 @@
       "time": "12:30",
       "key": "story_anastasiia",
       "idx": 0,
-      "approved": false,
+      "approved": true,
       "posted": false
     },
     {
@@ -77,7 +78,7 @@
       "time": "12:30",
       "key": "story_photographer",
       "idx": 0,
-      "approved": false,
+      "approved": true,
       "posted": false
     },
     {
@@ -85,7 +86,7 @@
       "time": "12:30",
       "key": "story_kitchen",
       "idx": 0,
-      "approved": false,
+      "approved": true,
       "posted": false
     },
     {
@@ -93,7 +94,7 @@
       "time": "12:30",
       "key": "story_anastasiia",
       "idx": 1,
-      "approved": false,
+      "approved": true,
       "posted": false
     },
     {
@@ -101,7 +102,7 @@
       "time": "12:30",
       "key": "story_photographer",
       "idx": 1,
-      "approved": false,
+      "approved": true,
       "posted": false
     },
     {
@@ -109,7 +110,7 @@
       "time": "12:30",
       "key": "story_kitchen",
       "idx": 1,
-      "approved": false,
+      "approved": true,
       "posted": false
     }
   ]
