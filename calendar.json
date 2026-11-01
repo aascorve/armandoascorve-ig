@@ -1,0 +1,106 @@
+{
+  "account": "17841440975668115",
+  "note": "Nov 2026 Week 1. Nothing here posts automatically until each entry's approved=true AND the one-time posting switch is turned on by Armando in chat.",
+  "feed": [
+    {
+      "date": "2026-11-02",
+      "time": "19:00",
+      "type": "reel",
+      "key": "r09_photographer",
+      "approved": false,
+      "posted": false,
+      "caption": "Stop taking pictures. Start directing them.\n\nThat's the first thing I tell every photographer at The Editorial Eye Workshop \u2014 and it's the one shift that changes everything about how your images read.\n\nWhat's the one habit that's held your photography back? Tell me below.",
+      "tags": "#editorialphotography #photographyworkshop #photographytips #behindthescenes #photographereducation #theeditorialeye"
+    },
+    {
+      "date": "2026-11-03",
+      "time": "19:00",
+      "type": "carousel",
+      "key": "anastasiia_carousel",
+      "approved": false,
+      "posted": false,
+      "caption": "Gothic stone, grey tailoring, one golden-hour window. Swipe through an editorial built around a single location and a lot of patience.\n\n@vanastasiia_",
+      "tags": "#editorialphotography #fashioneditorial #torontophotographer #streetstyle #editorial"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "19:00",
+      "type": "image",
+      "key": "yorkville_hero",
+      "approved": false,
+      "posted": false,
+      "caption": "Yorkville, five minutes before the light went. Camel, mustard, one frame.\n\n@design_hkds wearing @rebeccakingfashionhouse",
+      "tags": "#torontoeditorial #yorkville #fashionphotography #editorialstyle #streetstyle"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "19:00",
+      "type": "reel",
+      "key": "r05_editorial",
+      "approved": false,
+      "posted": false,
+      "caption": "This is how a look goes from the rack to the frame \u2014 in real time, no cuts.\n\nStyling is half the editorial. Get this part wrong and the best light in the world won't save the shot.\n\nSave this for your next shoot.",
+      "tags": "#fashioneditorial #stylingtips #editorialphotography #bts #photographytips #fashionphotography"
+    },
+    {
+      "date": "2026-11-07",
+      "time": "19:00",
+      "type": "image",
+      "key": "kitchen_hero",
+      "approved": false,
+      "posted": false,
+      "caption": "Two looks, one kitchen, zero boring corners.\n\nSpaces built to be photographed read completely differently once you light them like a set.",
+      "tags": "#interiorphotography #editorialphotography #fashionphotography #kitchendesign #behindthescenes"
+    }
+  ],
+  "stories": [
+    {
+      "date": "2026-11-02",
+      "time": "12:30",
+      "key": "story_anastasiia",
+      "idx": 0,
+      "approved": false,
+      "posted": false
+    },
+    {
+      "date": "2026-11-03",
+      "time": "12:30",
+      "key": "story_yorkville",
+      "idx": 0,
+      "approved": false,
+      "posted": false
+    },
+    {
+      "date": "2026-11-04",
+      "time": "12:30",
+      "key": "story_kitchen",
+      "idx": 0,
+      "approved": false,
+      "posted": false
+    },
+    {
+      "date": "2026-11-05",
+      "time": "12:30",
+      "key": "story_anastasiia",
+      "idx": 1,
+      "approved": false,
+      "posted": false
+    },
+    {
+      "date": "2026-11-06",
+      "time": "12:30",
+      "key": "story_yorkville",
+      "idx": 1,
+      "approved": false,
+      "posted": false
+    },
+    {
+      "date": "2026-11-07",
+      "time": "12:30",
+      "key": "story_kitchen",
+      "idx": 1,
+      "approved": false,
+      "posted": false
+    }
+  ]
+}

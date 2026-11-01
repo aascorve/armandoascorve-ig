@@ -1,0 +1,6 @@
+.venv/
+.tmp/
+.posted/
+contact/
+*.ARW
+*.tif
