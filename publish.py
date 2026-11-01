@@ -1,71 +1,93 @@
-"""Publish one due, approved entry from calendar.json. Not wired to a scheduler yet.
+"""Print the calendar.json entries that are due right now: approved, not yet
+posted, and inside their posting slot (slot_start .. slot_start + 3h). A
+missed slot is never caught up later -- it just stops showing as due.
 
-Safety:
-- Only touches an entry where approved == true. "approved" is set by Armando
-  reviewing media/ + calendar.json, never by this script.
-- Only posts within its time slot (slot_start <= now <= slot_start + 3h); a
-  missed slot is skipped, never posted late (see immersauna-ig-autopost incident).
-- Marks posted=true in calendar.json immediately after a successful call so a
-  re-run never double-posts.
-- Requires POSTING_ON=1 in the environment as a second, explicit switch beyond
-  "approved" -- this is the one-time "you may post" Armando gives in chat.
+Usage: .venv/bin/python publish.py
+Prints a JSON array (possibly empty) to stdout. Prints nothing else, so the
+output is always safe to parse directly.
+
+This script only READS calendar.json and never calls Instagram. The caller
+(a scheduled task session, or Armando running it by hand) is responsible for
+making the actual Windsor execute_action call for each entry it prints, then
+recording success with mark_posted.py.
 """
 import json
-import os
 import sys
 from datetime import datetime, timedelta
+from pathlib import Path
 from zoneinfo import ZoneInfo
+
+from picks import PICKS
 
 TZ = ZoneInfo("America/Toronto")
 MEDIA_BASE = "https://aascorve.github.io/armandoascorve-ig/media/"
 SLOT_WINDOW = timedelta(hours=3)
-CAL = __import__("pathlib").Path(__file__).resolve().parent / "calendar.json"
+CAL = Path(__file__).resolve().parent / "calendar.json"
+
+ACTION_BY_TYPE = {
+    "image": "create_image_post",
+    "carousel": "create_carousel_post",
+    "reel": "create_video_post",
+}
 
 
-def due_entries(now):
-    cal = json.loads(CAL.read_text())
-    due = []
+def urls_for(key, tag, idx=None):
+    _, names = PICKS[key]
+    n = len(names)
+    indices = [idx] if idx is not None else range(n)
+    ext = "mp4" if tag == "" else "jpg"  # reels use the bare key, not key_feed_N
+    if tag == "video":
+        return [f"{MEDIA_BASE}{key}.mp4"]
+    return [f"{MEDIA_BASE}{key}_{tag}_{i}.jpg" for i in indices]
+
+
+def due_feed(cal, now):
+    out = []
     for p in cal["feed"]:
         if not p["approved"] or p["posted"]:
             continue
         start = datetime.fromisoformat(f"{p['date']}T{p['time']}").replace(tzinfo=TZ)
-        if start <= now <= start + SLOT_WINDOW:
-            due.append(("feed", p))
+        if not (start <= now <= start + SLOT_WINDOW):
+            continue
+        entry = {
+            "kind": "feed", "key": p["key"], "type": p["type"],
+            "windsor_action": ACTION_BY_TYPE[p["type"]],
+            "caption": p["caption"] + "\n\n" + p["tags"],
+            "slot": f"{p['date']} {p['time']}",
+        }
+        if p["type"] == "reel":
+            entry["video_url"] = f"{MEDIA_BASE}{p['key']}.mp4"
+            entry["cover_url"] = f"{MEDIA_BASE}{p['key']}_cover.jpg"
+        elif p["type"] == "carousel":
+            entry["image_urls"] = urls_for(p["key"], "feed")
+        else:
+            entry["image_url"] = urls_for(p["key"], "feed")[0]
+        out.append(entry)
+    return out
+
+
+def due_stories(cal, now):
+    out = []
     for s in cal["stories"]:
         if not s["approved"] or s["posted"]:
             continue
         start = datetime.fromisoformat(f"{s['date']}T{s['time']}").replace(tzinfo=TZ)
-        if start <= now <= start + SLOT_WINDOW:
-            due.append(("story", s))
-    return cal, due
-
-
-def urls_for(entry):
-    from picks import PICKS
-    _, names = PICKS[entry["key"]]
-    n = len(names)
-    tag = "story" if "idx" in entry else "feed"
-    idx = [entry["idx"]] if "idx" in entry else range(n)
-    return [f"{MEDIA_BASE}{entry['key']}_{tag}_{i}.jpg" for i in idx]
+        if not (start <= now <= start + SLOT_WINDOW):
+            continue
+        out.append({
+            "kind": "story", "key": s["key"], "idx": s["idx"],
+            "windsor_action": "create_story",
+            "image_url": urls_for(s["key"], "story", s["idx"])[0],
+            "slot": f"{s['date']} {s['time']}",
+        })
+    return out
 
 
 def main():
-    if os.environ.get("POSTING_ON") != "1":
-        print("POSTING_ON is not set -- refusing to post. This is the explicit switch "
-              "Armando sets in chat; nothing here turns it on by itself.", file=sys.stderr)
-        return 1
+    cal = json.loads(CAL.read_text())
     now = datetime.now(TZ)
-    cal, due = due_entries(now)
-    if not due:
-        print("nothing due right now")
-        return 0
-    for kind, entry in due:
-        print(f"would publish {kind} {entry['key']} ({entry['date']} {entry['time']}) -- "
-              "actual execute_action call intentionally not wired in yet.")
-        # Next step once Armando says go: call the Windsor instagram connector's
-        # create_image_post / create_carousel_post / create_video_post / create_story
-        # with urls_for(entry) and entry.get("caption"), then set entry["posted"]=True
-        # and CAL.write_text(json.dumps(cal, indent=2)) immediately after success.
+    due = due_feed(cal, now) + due_stories(cal, now)
+    print(json.dumps(due, indent=2))
     return 0
 
 
