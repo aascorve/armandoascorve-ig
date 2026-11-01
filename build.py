@@ -39,7 +39,7 @@ def export(key, size, tag):
 if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
     feed = {k: export(k, FEED, "feed") for k in
-             ["anastasiia_carousel", "yorkville_hero", "kitchen_hero", "kitchen_carousel"]}
+             ["anastasiia_carousel", "photographer_hero", "kitchen_hero", "kitchen_carousel"]}
     story = {k: export(k, STORY, "story") for k in
-              ["story_anastasiia", "story_yorkville", "story_kitchen"]}
+              ["story_anastasiia", "story_photographer", "story_kitchen"]}
     print(json.dumps({"feed": feed, "story": story}, indent=1))

@@ -1,6 +1,6 @@
 {
   "account": "17841440975668115",
-  "note": "Nov 2026 Week 1. Nothing here posts automatically until each entry's approved=true AND the one-time posting switch is turned on by Armando in chat.",
+  "note": "Nov 2026 Week 1. Nothing posts automatically until each entry's approved=true AND the one-time posting switch is turned on by Armando in chat.",
   "feed": [
     {
       "date": "2026-11-02",
@@ -26,11 +26,11 @@
       "date": "2026-11-04",
       "time": "19:00",
       "type": "image",
-      "key": "yorkville_hero",
+      "key": "photographer_hero",
       "approved": false,
       "posted": false,
-      "caption": "Yorkville, five minutes before the light went. Camel, mustard, one frame.\n\n@design_hkds wearing @rebeccakingfashionhouse",
-      "tags": "#torontoeditorial #yorkville #fashionphotography #editorialstyle #streetstyle"
+      "caption": "Turn the camera around sometimes.\n\nMost of what makes a photo editorial isn't the camera \u2014 it's where you put the light and what you ask the person in front of it to do. Here's one from a gym session that proves it works anywhere.",
+      "tags": "#editorialphotography #fitnessphotography #photographylighting #photographytips #portraitphotography"
     },
     {
       "date": "2026-11-06",
@@ -65,7 +65,7 @@
     {
       "date": "2026-11-03",
       "time": "12:30",
-      "key": "story_yorkville",
+      "key": "story_photographer",
       "idx": 0,
       "approved": false,
       "posted": false
@@ -89,7 +89,7 @@
     {
       "date": "2026-11-06",
       "time": "12:30",
-      "key": "story_yorkville",
+      "key": "story_photographer",
       "idx": 1,
       "approved": false,
       "posted": false

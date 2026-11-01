@@ -12,10 +12,6 @@ CAPTIONS = {
         "caption": "Gothic stone, grey tailoring, one golden-hour window. Swipe through an editorial built around a single location and a lot of patience.\n\n@vanastasiia_",
         "tags": "#editorialphotography #fashioneditorial #torontophotographer #streetstyle #editorial",
     },
-    "yorkville_hero": {
-        "caption": "Yorkville, five minutes before the light went. Camel, mustard, one frame.\n\n@design_hkds wearing @rebeccakingfashionhouse",
-        "tags": "#torontoeditorial #yorkville #fashionphotography #editorialstyle #streetstyle",
-    },
     "kitchen_hero": {
         "caption": "Two looks, one kitchen, zero boring corners.\n\nSpaces built to be photographed read completely differently once you light them like a set.",
         "tags": "#interiorphotography #editorialphotography #fashionphotography #kitchendesign #behindthescenes",
@@ -24,4 +20,9 @@ CAPTIONS = {
         "caption": "A kitchen editorial, start to finish. Same room, four different frames — proof you don't need to change locations to change the story.\n\nSwipe through.",
         "tags": "#editorialphotography #interiorphotography #fashioneditorial #bts #photographytips",
     },
+}
+
+CAPTIONS["photographer_hero"] = {
+    "caption": "Turn the camera around sometimes.\n\nMost of what makes a photo editorial isn't the camera — it's where you put the light and what you ask the person in front of it to do. Here's one from a gym session that proves it works anywhere.",
+    "tags": "#editorialphotography #fitnessphotography #photographylighting #photographytips #portraitphotography",
 }
