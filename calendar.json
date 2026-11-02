@@ -38,10 +38,11 @@
       "time": "19:00",
       "type": "reel",
       "key": "r05_editorial",
-      "approved": true,
+      "approved": false,
       "posted": false,
       "caption": "This is how a look goes from the rack to the frame \u2014 in real time, no cuts.\n\nStyling is half the editorial. Get this part wrong and the best light in the world won't save the shot.\n\nSave this for your next shoot.",
-      "tags": "#fashioneditorial #stylingtips #editorialphotography #bts #photographytips #fashionphotography"
+      "tags": "#fashioneditorial #stylingtips #editorialphotography #bts #photographytips #fashionphotography",
+      "hold_note": "Reels stopped by Armando 2026-11-01"
     },
     {
       "date": "2026-11-07",
@@ -71,7 +72,8 @@
       "key": "story_anastasiia",
       "idx": 0,
       "approved": true,
-      "posted": false
+      "posted": true,
+      "media_id": "18120566086966186"
     },
     {
       "date": "2026-11-03",
