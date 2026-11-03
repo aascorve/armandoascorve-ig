@@ -81,7 +81,8 @@
       "key": "story_photographer",
       "idx": 0,
       "approved": true,
-      "posted": false
+      "posted": true,
+      "media_id": "18316742443304149"
     },
     {
       "date": "2026-11-04",
