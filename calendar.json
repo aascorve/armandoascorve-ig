@@ -90,7 +90,8 @@
       "key": "story_kitchen",
       "idx": 0,
       "approved": true,
-      "posted": false
+      "posted": true,
+      "media_id": "18006875549793987"
     },
     {
       "date": "2026-11-05",
