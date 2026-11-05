@@ -99,7 +99,8 @@
       "key": "story_anastasiia",
       "idx": 1,
       "approved": true,
-      "posted": false
+      "posted": true,
+      "media_id": "18099928907409423"
     },
     {
       "date": "2026-11-06",
