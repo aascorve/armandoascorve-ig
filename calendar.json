@@ -108,7 +108,8 @@
       "key": "story_photographer",
       "idx": 1,
       "approved": true,
-      "posted": false
+      "posted": true,
+      "media_id": "17958525462266617"
     },
     {
       "date": "2026-11-07",
