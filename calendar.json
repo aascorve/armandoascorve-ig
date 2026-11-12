@@ -19,9 +19,11 @@
       "type": "carousel",
       "key": "anastasiia_carousel",
       "approved": true,
-      "posted": false,
+      "posted": true,
       "caption": "Gothic stone, grey tailoring, one golden-hour window. Swipe through an editorial built around a single location and a lot of patience.\n\n@vanastasiia_",
-      "tags": "#editorialphotography #fashioneditorial #torontophotographer #streetstyle #editorial"
+      "tags": "#editorialphotography #fashioneditorial #torontophotographer #streetstyle #editorial",
+      "media_id": "18342212839275722",
+      "posted_note": "posted off-schedule 2026-11-12 by explicit request (scheduled-task run had been blocked by the auto-mode permission classifier)"
     },
     {
       "date": "2026-11-04",
@@ -29,9 +31,11 @@
       "type": "image",
       "key": "photographer_hero",
       "approved": true,
-      "posted": false,
+      "posted": true,
       "caption": "Turn the camera around sometimes.\n\nMost of what makes a photo editorial isn't the camera \u2014 it's where you put the light and what you ask the person in front of it to do. Here's one from a gym session that proves it works anywhere.",
-      "tags": "#editorialphotography #fitnessphotography #photographylighting #photographytips #portraitphotography"
+      "tags": "#editorialphotography #fitnessphotography #photographylighting #photographytips #portraitphotography",
+      "media_id": "18188948107424093",
+      "posted_note": "posted off-schedule 2026-11-12 by explicit request (scheduled-task run had been blocked by the auto-mode permission classifier)"
     },
     {
       "date": "2026-11-06",
@@ -61,9 +65,11 @@
       "type": "image",
       "key": "anastasiia_bridge",
       "approved": true,
-      "posted": false,
+      "posted": true,
       "caption": "Low angle, low light, one girder overhead for a ceiling.\n\nSometimes the location is the lighting plan \u2014 this one just needed someone willing to shoot from the ground.\n\n@vanastasiia_",
-      "tags": "#editorialphotography #fashioneditorial #streetstyle #torontophotographer #editorial"
+      "tags": "#editorialphotography #fashioneditorial #streetstyle #torontophotographer #editorial",
+      "media_id": "18135114139666744",
+      "posted_note": "posted off-schedule 2026-11-12 by explicit request (scheduled-task run had been blocked by the auto-mode permission classifier)"
     }
   ],
   "stories": [
